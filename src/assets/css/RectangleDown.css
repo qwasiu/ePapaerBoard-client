@@ -1,0 +1,25 @@
+.rectangledown{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top:20px;
+}
+.rectangledown_up{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.rectangledown_sensors{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-weight: bold;
+}
+.rectangledown_icons{
+    padding-right:25px;
+    display:flex;
+    flex-direction: row-reverse;
+}
+.rectangledown_icons img{
+    padding-left:5px;
+}

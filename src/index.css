@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), 
+       url("./assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype"),
+       url("./assets/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+}
+body {
+  margin: 0;
+  font-family: "DejaVu Sans Mono", monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
