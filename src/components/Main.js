@@ -51,9 +51,9 @@ function Main() {
   useEffect(() => {
     const fetchEnvData = async () => {
       try {
+        console.log('fetching env data',serverAddr)
         const response = await fetchPlus(`${serverAddr}/envdata`);
-        const lol = await fetchPlus(`/envdata`);
-        console.log(lol)
+  
         setEnvData(response)
       }
       catch (error) {
@@ -79,7 +79,7 @@ function Main() {
     const fetchForecast = async () => {
       let data
       try {
-         data = await fetchPlus(`http://${envData.oldBoardIP}:${envData.oldBoardPort}/forecast/getforecast?city=szcz`)
+         data = await fetchPlus(`http://${envData.oldBoardIP}:${envData.oldBoardPort}/forecast/getforecast?city=${envData.forecastCity}`)
       }
       catch (error) {}
 
